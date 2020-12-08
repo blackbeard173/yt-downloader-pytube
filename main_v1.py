@@ -38,10 +38,10 @@ for stream in video.streams.filter(progressive=True):
 # video.streams.filter(file_extension='mp4').all()
 
 
-final_video = video.streams.get_by_itag('18')
-print("Downloading video..")
-final_video.download()
-print("done!")
+final_video = video.streams.get_by_itag(18)
 
-if __name__ == '__main__':
-    pass
+print("Downloading video..")
+
+final_video.download()
+
+print("done!")
